@@ -1,0 +1,30 @@
+# Site Scraper
+
+## Description
+
+This is for scrapping a dynamic word press site and making a static web site. 
+
+Static site hosting is much cheaper and quicker than hosting a word press site. The idea is to host a website locally and use this to create a static site which is hosted externally  on a server. 
+
+This uses `wget` to make a copy of the site assets, then uses `sed` to correct any hard coded links 
+
+### Requirments
+
+`apt-get install wget`
+
+`sudo apt install sed`
+
+## Variables
+
+The script uses two variables:
+
+- `IP_ADDRESS`: The IP address of the website to scrape.
+- `SITE_NAME`: The name of the site.
+
+These variables are defined at the top of the script. To change the IP address or site name, modify the values of these variables
+
+## Known Problems
+
+Any features requiring server processing won't work
+
+- Comment Section
